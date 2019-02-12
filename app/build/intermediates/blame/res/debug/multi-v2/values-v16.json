@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "/home/aravind/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.1.aar/c2cf2680aea3a9c3e5c47fc9add8b51b/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "/home/aravind/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/e8fea0a3014afad7d3d421fc15cf1e30/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}

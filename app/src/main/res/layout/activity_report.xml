@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/outerlinearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reportheading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green_dark"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="QUIZ REPORT" />
+
+            <!-- Question1 -->
+            <LinearLayout
+                    android:id="@+id/ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/question1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:background="@color/reportyellow"
+                            android:textStyle="bold"
+                            android:padding="10dp"
+                            android:text="@string/samplequestion"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:background="@color/white"
+                            android:layout_margin="@dimen/cardview_default_radius"
+                            android:paddingStart="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ch1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:textColor="@color/red"
+                                android:text="YourAnswer1"/>
+
+                            <TextView
+                                android:id="@+id/ans1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/OliveGreen"
+                                android:layout_marginTop="10dp"
+                                android:textAlignment="center"
+                                android:text="CorrectOption1"/>
+
+                        </LinearLayout>
+
+                    <!-- End of Question1 -->
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer2"/>
+
+                        <TextView
+                            android:id="@+id/ans2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption2"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer3"/>
+
+                        <TextView
+                            android:id="@+id/ans3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption3"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer4"/>
+
+                        <TextView
+                            android:id="@+id/ans4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption4"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer5"/>
+
+                        <TextView
+                            android:id="@+id/ans5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption5"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer6"/>
+
+                        <TextView
+                            android:id="@+id/ans6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption6"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer7"/>
+
+                        <TextView
+                            android:id="@+id/ans7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption7"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer8"/>
+
+                        <TextView
+                            android:id="@+id/ans8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption8"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer9"/>
+
+                        <TextView
+                            android:id="@+id/ans9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption9"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/question10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:background="@color/reportyellow"
+                        android:textStyle="bold"
+                        android:padding="10dp"
+                        android:text="@string/samplequestion"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:background="@color/white"
+                        android:layout_margin="@dimen/cardview_default_radius"
+                        android:paddingStart="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/ch10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:textColor="@color/red"
+                            android:text="YourAnswer10"/>
+
+                        <TextView
+                            android:id="@+id/ans10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/OliveGreen"
+                            android:layout_marginTop="10dp"
+                            android:textAlignment="center"
+                            android:text="CorrectOption10"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <Button
+                    android:id="@+id/BackToHomeScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textSize="16sp"
+                    android:onClick="BacktoMainScreen"
+                    android:textAlignment="center"
+                    android:background="@color/TopBarColor"
+                    android:textColor="@color/white"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/backtohome" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

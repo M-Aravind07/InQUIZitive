@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="TopBarColor">#1e4891</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightertintblue">#d7e1f2</color>
+    <color name="black">#000000</color>
+    <color name="grey">#626a77</color>
+    <color name="green_dark">#375924</color>
+    <color name="red">#c91e1e</color>
+    <color name="OliveGreen">#488c4e</color>
+    <color name="orange1">#ce7e1c</color>
+    <color name="orange2">#d39965</color>
+    <color name="bgyellow">#ecf29d</color>
+    <color name="blue3">#e0e8ff</color>
+    <color name="blue_med">#74afe0</color>
+    <color name="brown">#591e0e</color>
+    <color name="blue4">#dce6ed</color>
+    <color name="green3">#36af1d</color>
+    <color name="sandal">#d8981a</color>
+    <color name="bgblue">#89fffb</color>
+    <color name="orange">#f7c279</color>
+    <color name="lightpink">#ffcee5</color>
+    <color name="lightgrey">#b7b7b7</color>
+    <color name="blue5">#e2fdff</color>
+    <color name="grey1">#d1d1d1</color>
+    <color name="lighttgrey">#e2e2e2</color>
+    <color name="reportyellow">#fff4c4</color>
+</resources>

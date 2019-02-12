@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">InQUIZitive</string>
+    <string name="signup_prompt"> New user? Click here to register </string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="todo">TODO</string>
+    <string name="back"> BACK </string>
+    <string name="startquiz">START QUIZ</string>
+    <string name="usersvg"> USER_ICON </string>
+    <string name="username">UserName</string>
+    <string name="instructions"> INSTRUCTIONS </string>
+    <string name="listofinstructions">
+        1. Maximum number of attempts possible : 1\n\n
+        2. Total number of questions : 10\n\n
+        3. You have 15 seconds to attend each question\n\n
+        4. Unanswered questions will not be considered for scoring\n\n
+        5. Decision of the judges are final and further arguments will not be encouraged\n\n
+    </string>
+    <string name="listofinstructions1">\n
+        1. Maximum number of attempts possible :
+    </string>
+    <string name="listofinstructions2">\n\n
+        2. Total number of questions : 10\n\n
+        3. You have 15 seconds to attend each question\n\n
+        4. Unanswered questions will not be considered for scoring\n\n
+        5. Decision of the judges are final and further arguments will not be encouraged\n\n
+    </string>
+    <string name="AgreetoConditions"> I have understood all instructions and will adhere to the same</string>
+
+    <string name="YourScore"> Your score (out of 100) is </string>
+    <string name="ViewReport"> View Report </string>
+    <string name="backtohome"> Back to Home Screen</string>
+
+    <string name="samplequestion"> ausidf sdfyi adqiwe asds qweqwe adsdaweq  qweoojididfj dhfasdakds ld asd asjasda sda
+    asd asdh asdh kjasd 2io3123jf sadaslj asd kjlasd</string>
+
+    <style name="RadioButtonStyle" parent="AppTheme">
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/green3</item>
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+</resources>
+
