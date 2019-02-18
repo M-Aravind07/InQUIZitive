@@ -2,40 +2,79 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="27"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xxhdpi"
     format="10"
     plugin-version="3.3.1"
-    timestamp="1549978667248"
+    timestamp="1550035640918"
     token="8859814340512948645"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="131" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="16" />
     <task
         name="verifier"
-        duration="0" />
+        duration="2" />
 
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
     <artifact
         location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
         type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1549978533774"
+        timestamp="1550035640918"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -65,19 +104,8 @@
             location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1549978667248"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/aravind/Apps/Android Studio/InQuizitive_2_1/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
     </build>
 
 </instant-run>

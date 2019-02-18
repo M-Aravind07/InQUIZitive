@@ -786,7 +786,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id button2
 id buttonPanel
 id cancel_action
 id ch1
@@ -913,7 +912,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id signup_switch
 id spacer
 id split_action_bar
 id spread
@@ -1011,6 +1009,8 @@ layout tooltip
 mipmap ic_launcher
 mipmap ic_launcher_round
 string AgreetoConditions
+string Cancel
+string Confirm
 string ViewReport
 string YourScore
 string abc_action_bar_home_description

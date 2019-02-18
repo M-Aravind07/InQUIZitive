@@ -15,23 +15,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:text="@string/YourScore"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:background="@color/blue3"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:background="@color/reportyellow"
-            android:text="0"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="26sp" />
+            android:textSize="29sp" />
 
         <Button
             android:id="@+id/reviewbutton"

@@ -3,6 +3,7 @@ package com.example.aravind.quiztest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -68,6 +69,7 @@ public class Report extends AppCompatActivity
     }
 
     public void report(){
+        String chosenoption,correctoption;
         final int[] QIds = {R.id.question1,R.id.question2,R.id.question3,R.id.question4,R.id.question5,R.id.question6,R.id.question7,
                 R.id.question8,R.id.question9,R.id.question10}, CIds = {R.id.ch1, R.id.ch2, R.id.ch3, R.id.ch4, R.id.ch5, R.id.ch6,
                 R.id.ch7, R.id.ch8, R.id.ch9, R.id.ch10}, AIds = {R.id.ans1, R.id.ans2, R.id.ans3, R.id.ans4, R.id.ans5, R.id.ans6,
@@ -75,8 +77,16 @@ public class Report extends AppCompatActivity
         int i = 0;
         for(String qAndA : getIntent().getStringExtra("responses").split(",")){
             ((TextView)findViewById(QIds[i])).setText(data.get(qAndA.split(":")[0]).get("question"));
-            ((TextView)findViewById(CIds[i])).setText("Your Answer   : " + qAndA.split(":")[1]);
-            ((TextView)findViewById(AIds[i])).setText("Correct Answer: " + data.get(qAndA.split(":")[0]).get("answer"));
+            chosenoption=qAndA.split(":")[1];
+            correctoption=data.get(qAndA.split(":")[0]).get("answer");
+
+            if (chosenoption.equals(correctoption))
+            {
+                ((TextView)findViewById(CIds[i])).setTextColor(Color.parseColor("#488c4e"));
+            }
+
+            ((TextView)findViewById(CIds[i])).setText("Your Answer   : " + data.get(qAndA.split(":")[0]).get("option" + chosenoption ));
+            ((TextView)findViewById(AIds[i])).setText("Correct Answer: " + data.get(qAndA.split(":")[0]).get("option" + correctoption ));
             i++;
         }
     }
@@ -85,5 +95,6 @@ public class Report extends AppCompatActivity
     {
         FirebaseAuth.getInstance().signOut();
         startActivity(new Intent(Report.this,LoginActivity.class));
+        finish();
     }
 }

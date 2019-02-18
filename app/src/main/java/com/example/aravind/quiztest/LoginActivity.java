@@ -48,6 +48,24 @@ public class LoginActivity extends AppCompatActivity
         CheckNetworkConnection();
     }
 
+    /*public void onBackPressed() {
+        AlertDialog.Builder diag= new AlertDialog.Builder(this);
+        diag.setTitle("Confirm Exit").setMessage("Press Confirm to quit");
+
+        diag.setPositiveButton("CONFIRM", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                finish();
+            }
+        });
+
+        diag.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+    } */
+
+
     public void CheckNetworkConnection()
     {
         if (!isNetworkConnected())
@@ -96,6 +114,7 @@ public class LoginActivity extends AppCompatActivity
     }
 
 
+
     public boolean onTouchEvent(MotionEvent event)
     {
         switch (event.getAction())
@@ -128,6 +147,9 @@ public class LoginActivity extends AppCompatActivity
         username=((EditText)findViewById(R.id.user_email)).getText().toString();
         userpassword=((EditText)findViewById(R.id.user_password)).getText().toString();
 
+        //
+        CheckNetworkConnection();
+
         if ((username.equals("") || userpassword.equals("") ))
         {
             ((TextView)findViewById(R.id.incompletedetails)).setText("Enter login credentials");
@@ -156,7 +178,7 @@ public class LoginActivity extends AppCompatActivity
                         //startActivity(new Intent(LoginActivity.this, StartQuiz.class));
                     }
 
-                    else if (!task.isSuccessful())
+                    else if (!task.isSuccessful() && isNetworkConnected())
                     {
                         AlertDialog.Builder builder=new AlertDialog.Builder(LoginActivity.this);
                         builder.setMessage("Invalid Login Credentials");

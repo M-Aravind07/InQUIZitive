@@ -17,13 +17,14 @@
         5. Decision of the judges are final and further arguments will not be encouraged\n\n
     </string>
     <string name="listofinstructions1">\n
-        1. Maximum number of attempts possible :
+        1. Make sure you are connected to the internet throughout the game\n\n
+        2. Maximum number of attempts possible :
     </string>
     <string name="listofinstructions2">\n\n
-        2. Total number of questions : 10\n\n
-        3. You have 15 seconds to attend each question\n\n
-        4. Unanswered questions will not be considered for scoring\n\n
-        5. Decision of the judges are final and further arguments will not be encouraged\n\n
+        3. Total number of questions : 10\n\n
+        4. You have 15 seconds to attend each question\n\n
+        5. Unanswered questions will not be considered for scoring\n\n
+        6. Decision of the judges are final and further arguments will not be encouraged\n\n
     </string>
     <string name="AgreetoConditions"> I have understood all instructions and will adhere to the same</string>
 
@@ -34,6 +35,8 @@
     <string name="samplequestion"> ausidf sdfyi adqiwe asds qweqwe adsdaweq  qweoojididfj dhfasdakds ld asd asjasda sda
     asd asdh asdh kjasd 2io3123jf sadaslj asd kjlasd</string>
 
+    <string name="Confirm"> CONFIRM </string>
+    <string name="Cancel"> CANCEL </string>
     <style name="RadioButtonStyle" parent="AppTheme">
         <item name="colorControlNormal">@color/black</item>
         <item name="colorControlActivated">@color/green3</item>

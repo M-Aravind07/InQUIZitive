@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -84,14 +85,30 @@ public class StartQuiz extends AppCompatActivity {
 
     }
 
+    //Drop down - to view reports / logout
+    public void dropdown(View view)
+    {
+
+    }
+
+
     public void GoToQuestionPage(View view)
     {
+        //Check if checkbox is ticked
+        CheckBox chkbox=(CheckBox)findViewById(R.id.checkbutton);
         try {
-            if (data.get("Quiz1") == 1 && quiz.get("Quiz1").equals("1")) {
+            if (data.get("Quiz1") == 1 && quiz.get("Quiz1").equals("1") && chkbox.isChecked()) {
                 Intent intent = new Intent(StartQuiz.this, Question_Answer.class);
                 intent.putExtra("uname", uname.split("@")[0]);
                 startActivity(intent);
-            } else if(quiz.get("Quiz1").equals("0")){
+            }
+
+            else if (!chkbox.isChecked())
+            {
+                Toast.makeText(this,"Please check the agreement box",Toast.LENGTH_LONG).show();
+            }
+
+            else if(quiz.get("Quiz1").equals("0")){
                 if (mToast != null) {
                     mToast.cancel();
                 }

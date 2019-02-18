@@ -4,11 +4,13 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.nfc.Tag;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.util.Patterns;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.WindowManager;
@@ -21,6 +23,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -105,6 +108,11 @@ public class    SignUpActivity extends AppCompatActivity
             t.setText("Passwords do not match");
         }
 
+        else if (!username.matches("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"))
+        {
+            t.setText("Enter proper email address");
+        }
+
 
         else
         {
@@ -140,8 +148,22 @@ public class    SignUpActivity extends AppCompatActivity
 
                     else
                     {
-                        FirebaseAuthException e=(FirebaseAuthException)task.getException();
-                        Toast.makeText(SignUpActivity.this,"Registration Failed :(",Toast.LENGTH_LONG).show();
+                        String errcode=((FirebaseAuthException) task.getException()).getErrorCode();
+
+                        //Added exception handling in Signup activity
+                        switch(errcode) {
+                            case "ERROR_INVALID_EMAIL": ((TextView)findViewById(R.id.ErrorMsg)).setText("Email is improperly formatted");
+                            break;
+
+                            case "ERROR_EMAIL_ALREADY_IN_USE": ((TextView)findViewById(R.id.ErrorMsg)).setText("Email is already in use!");
+                            break;
+
+                            default: ((TextView)findViewById(R.id.ErrorMsg)).setText("Something went wrong. Try again!");
+                                Toast.makeText(SignUpActivity.this,"Registration Failed :(",Toast.LENGTH_LONG).show();
+
+                        }
+
+
                     }
                 }
             });

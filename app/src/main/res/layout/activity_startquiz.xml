@@ -6,16 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".StartQuiz">
 
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/blue3"
-            android:layout_marginTop="15dp"
+            android:foregroundGravity="top"
             android:gravity="end"
             android:orientation="horizontal">
 
@@ -36,6 +41,7 @@
                 android:layout_height="40dp"
                 android:paddingTop="10dp"
                 android:contentDescription="@string/usersvg"
+                android:onClick="DropDown"
                 app:srcCompat="@drawable/ic_user" />
 
         </LinearLayout>
@@ -66,7 +72,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="9dp"
             android:paddingBottom="10dp"
             android:layout_marginTop="10dp"
             android:background="@color/bgyellow"
@@ -76,7 +82,7 @@
                 android:id="@+id/checkbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="7dp"/>
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -92,7 +98,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
 
             <Button
                 android:id="@+id/Submit"
@@ -111,4 +118,5 @@
         </RelativeLayout>
 
     </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>
