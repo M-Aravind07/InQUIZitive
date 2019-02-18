@@ -54,11 +54,12 @@ public class Question_Answer extends AppCompatActivity
     private Map<String, String> responseOptions;
     private ArrayList<Integer> rIndexes;
     private int questionIndex = -1;
-    private  String uname = "";
+    private String uname = "";
+    private String round;
     private Boolean submitted = false;
     private CountDownTimer timer;
     private ProgressDialog mProgressDialog;
-    private Map<String, String> quiz;
+    private Map<String, Integer> quiz;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -66,23 +67,26 @@ public class Question_Answer extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question__answer);
 
+        //unpacking extras
+        if(getIntent() != null){
+            uname = getIntent().getStringExtra("uname");
+            round = getIntent().getStringExtra("round");
+            Log.d("Quiz", "Name: " + uname);
+            Log.d("Quiz", "Round: " + round);
+        }
+
         //assigning values
         time = findViewById(R.id.Time_value);
-        //Qno = findViewById(R.id.Qno);
         rIndexes = new ArrayList<>();
         quiz = new HashMap<>();
         db = FirebaseDatabase.getInstance();
-        qRef = db.getReference("Questions");
+        qRef = db.getReference("Questions" + round);
         aRef = db.getReference("Submissions");
         uRef = db.getReference("UserAttempt");
         data = new HashMap<>();
         response = new HashMap<>();
         responseOptions = new HashMap<>();
-        if(getIntent() != null){
-            uname = getIntent().getStringExtra("uname");
-            Log.d("Quiz", "Name:" + uname);
-        }
-        Log.d("Quiz", "Name:" + uname);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         CheckNetworkConnection();
@@ -150,7 +154,7 @@ public class Question_Answer extends AppCompatActivity
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot d: dataSnapshot.getChildren()) {
                     //Log.d("Quiz", "User Attempt: " + d.getKey().toString() + "," + d.getValue().toString());
-                    quiz = (Map<String, String>) d.getValue();
+                    quiz = (Map<String, Integer>) d.getValue();
                 }
             }
 
@@ -169,7 +173,7 @@ public class Question_Answer extends AppCompatActivity
                     //Map<String, String> info = (Map<String, String>) d.getValue();
                 }
                 //No. of attempts made zero
-                quiz.put("Quiz1", "0");
+                quiz.put("Quiz", 0);
                 uRef.child(uname).removeValue();
                 uRef.child(uname).push().setValue(quiz);
                 mProgressDialog.cancel();
@@ -211,6 +215,7 @@ public class Question_Answer extends AppCompatActivity
             intent.putExtra("uname", uname);
             String responses = getResponses();
             intent.putExtra("responses", responses);
+            intent.putExtra("round", round);
             //intent.putExtra("responses", responses);
             startActivity(intent);
             finish(); //Prevents from going to the questions once score is generated
