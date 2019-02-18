@@ -87,6 +87,7 @@ public class Scores extends AppCompatActivity {
         Intent intent = new Intent(Scores.this,Report.class);
         intent.putExtra("uname", uname);
         intent.putExtra("responses", getIntent().getStringExtra("responses"));
+        intent.putExtra("round", getIntent().getStringExtra("round"));
         startActivity(intent);
     }
 

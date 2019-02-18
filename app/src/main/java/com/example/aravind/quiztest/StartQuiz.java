@@ -29,7 +29,7 @@ public class StartQuiz extends AppCompatActivity {
     private String uname;
     private Toast mToast;
     private ProgressDialog mProgressDialog;
-    private Map<String, String> quiz;
+    private Map<String, Long> quiz;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -53,9 +53,9 @@ public class StartQuiz extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 for(DataSnapshot d: dataSnapshot.getChildren()) {
                     Log.d("Quiz", "User Attempt: " + d.getKey().toString() + "," + d.getValue().toString());
-                    quiz = (Map<String, String>) d.getValue();
+                    quiz = (Map<String, Long>) d.getValue();
                 }
-                String inst = getString(R.string.listofinstructions1) + " " + quiz.get("Quiz1") + getString(R.string.listofinstructions2);
+                String inst = getString(R.string.listofinstructions1) + " " + String.valueOf(quiz.get("Quiz")) + getString(R.string.listofinstructions2);
                 ((TextView) findViewById(R.id.instructions)).setText(inst);
                 if(mProgressDialog!=null)
                     mProgressDialog.cancel();
@@ -97,9 +97,10 @@ public class StartQuiz extends AppCompatActivity {
         //Check if checkbox is ticked
         CheckBox chkbox=(CheckBox)findViewById(R.id.checkbutton);
         try {
-            if (data.get("Quiz1") == 1 && quiz.get("Quiz1").equals("1") && chkbox.isChecked()) {
+            if (data.get("QuizRound") > 0 && data.get("QuizRound") <= 3 && quiz.get("Quiz") == 1 && chkbox.isChecked()) {
                 Intent intent = new Intent(StartQuiz.this, Question_Answer.class);
                 intent.putExtra("uname", uname.split("@")[0]);
+                intent.putExtra("round", String.valueOf(data.get("QuizRound")));
                 startActivity(intent);
             }
 
@@ -108,7 +109,7 @@ public class StartQuiz extends AppCompatActivity {
                 Toast.makeText(this,"Please check the agreement box",Toast.LENGTH_LONG).show();
             }
 
-            else if(quiz.get("Quiz1").equals("0")){
+            else if(quiz.get("Quiz1") == 0){
                 if (mToast != null) {
                     mToast.cancel();
                 }

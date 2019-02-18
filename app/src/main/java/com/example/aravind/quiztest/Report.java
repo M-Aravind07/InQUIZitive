@@ -36,7 +36,7 @@ public class Report extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
         db = FirebaseDatabase.getInstance();
-        ref = db.getReference("Questions");
+        ref = db.getReference("Questions" + getIntent().getStringExtra("round"));
         data = new HashMap<>();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);

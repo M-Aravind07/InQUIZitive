@@ -172,10 +172,8 @@ public class    SignUpActivity extends AppCompatActivity
     public void createSpace(){
         String uname = username.split("@")[0];
         Log.d("Quiz", "Creating space for user-1");
-        Map<String, String> quiz = new HashMap<>();
-        quiz.put("Quiz1", "1");
-        quiz.put("Quiz2", "0");
-        quiz.put("Quiz3", "0");
+        Map<String, Integer> quiz = new HashMap<>();
+        quiz.put("Quiz", 1);
         ref.child(uname).push().setValue(quiz);
     }
 }
