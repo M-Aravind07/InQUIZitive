@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
-        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_light.9.png.flat",
+        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -144,6 +144,10 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
     {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_top_material.xml.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable\\abc_cab_background_top_material.xml"
     },
@@ -168,12 +172,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scenarybg.jpg.flat",
-        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\drawable\\scenarybg.jpg"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_scenarybg.jpg.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\drawable\\scenarybg.jpg"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_dark_focused.xml.flat",
@@ -200,12 +204,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\color-v23\\abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-mdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -276,12 +280,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_plainbg.jpg.flat",
         "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\drawable\\plainbg.jpg"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_disabled.xml.flat",
@@ -376,12 +380,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
-        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\layout\\activity_report.xml"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_report.xml.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\layout\\activity_report.xml"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -444,12 +448,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-mdpi-v4\\abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-hdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\color_switch_thumb_material_light.xml.flat",
@@ -508,12 +512,12 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
-        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_hint_foreground_material_light.xml.flat",
+        "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_btn_radio_material.xml.flat",
@@ -724,6 +728,10 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-26.1.0.aar\\8d067f24331c1e3e6cedc5f14278f5bb\\res\\layout\\notification_template_media.xml"
     },
     {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_splash_screen.xml.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
+    },
+    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-mdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -826,6 +834,10 @@
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_googleg_disabled_color_18.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\fe268e5491045fad5efa15910295906d\\res\\drawable-mdpi-v4\\googleg_disabled_color_18.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_list_menu_item_radio.xml.flat",
@@ -1352,6 +1364,10 @@
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xxxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
@@ -1434,6 +1450,10 @@
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_48dp.png.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\drawable-xhdpi-v4\\abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_icon_disabled.xml.flat",
@@ -1538,6 +1558,10 @@
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
         "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.1.aar\\5c079db1869a5f49045962c8cf748409\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",

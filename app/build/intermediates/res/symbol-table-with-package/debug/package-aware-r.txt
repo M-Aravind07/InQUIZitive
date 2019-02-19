@@ -426,6 +426,7 @@ color grey
 color grey1
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color lightertintblue
 color lightgrey
 color lightpink
@@ -834,6 +835,7 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
 id imageView6
 id incompletedetails
 id info
@@ -985,6 +987,7 @@ layout activity_question__answer
 layout activity_report
 layout activity_scores
 layout activity_sign_up
+layout activity_splash_screen
 layout activity_startquiz
 layout notification_action
 layout notification_action_tombstone
@@ -1007,6 +1010,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout tooltip
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string AgreetoConditions
 string Cancel
@@ -1446,6 +1450,7 @@ style Widget_AppCompat_Toolbar_Button_Navigation
 style Widget_Compat_NotificationActionContainer
 style Widget_Compat_NotificationActionText
 style WindowAnimationTransition
+style splash
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

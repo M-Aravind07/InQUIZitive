@@ -24,16 +24,23 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.aravind.quiztest.SplashScreen"
+            android:theme="@style/splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.example.aravind.quiztest.Report" />
         <activity android:name="com.example.aravind.quiztest.Scores" />
         <activity
             android:name="com.example.aravind.quiztest.LoginActivity"
             android:exported="true" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name="com.example.aravind.quiztest.Question_Answer" />
