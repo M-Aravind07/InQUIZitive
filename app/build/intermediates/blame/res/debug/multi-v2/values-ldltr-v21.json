@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "/home/aravind/Desktop/VIT/Winter18-19/InQUIZitive/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.1.aar\\9474df5b9c132452578962c71506942e\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "/home/aravind/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.1.aar/e8fea0a3014afad7d3d421fc15cf1e30/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

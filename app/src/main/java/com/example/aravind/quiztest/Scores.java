@@ -19,6 +19,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -27,6 +28,7 @@ public class Scores extends AppCompatActivity {
 
     private FirebaseDatabase db;
     private DatabaseReference ref;
+    private DatabaseReference sRef;
     private String uname;
     private TextView score;
     private ProgressDialog mProgressDialog;
@@ -38,6 +40,7 @@ public class Scores extends AppCompatActivity {
         setContentView(R.layout.activity_scores);
         db = FirebaseDatabase.getInstance();
         ref = db.getReference("Submissions");
+        sRef = db.getReference("Scores");
         score = findViewById(R.id.score);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -63,7 +66,15 @@ public class Scores extends AppCompatActivity {
                     response = (Map<String, String>) d.getValue();
                 }
                 Log.d("Quiz", "Response: " + response.toString());
-                score.setText(calcScore(response));
+                String s;
+                if(response == null)
+                    s = "0.00";
+                else
+                    s = calcScore(response);
+                score.setText(s);
+                Map<String, String> val = new HashMap<>();
+                val.put("Round" + getIntent().getStringExtra("round"), s);
+                sRef.child(uname).push().setValue(val);
             }
 
             @Override
@@ -74,10 +85,12 @@ public class Scores extends AppCompatActivity {
     }
 
     public String calcScore(Map<String, String> response){
-        float score = 0;
+        double score = 0;
         for(String qAndA : getIntent().getStringExtra("responses").split(",")){
             float tt = Float.valueOf(response.get(qAndA.split(":")[0]));
             score += (tt/15) * 10;
+            DecimalFormat dec = new DecimalFormat("#.##");
+            score = Double.valueOf(dec.format(score));
         }
         return String.valueOf(score);
     }

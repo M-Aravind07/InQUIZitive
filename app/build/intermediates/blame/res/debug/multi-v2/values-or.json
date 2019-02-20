@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\shyam\\Desktop\\InQUIZitive\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-or\\values-or.xml",
+            "outputFile": "/home/aravind/Desktop/VIT/Winter18-19/InQUIZitive/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-or/values-or.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-16.0.1.aar\\fe268e5491045fad5efa15910295906d\\res\\values-or\\values.xml",
+                    "source": "/home/aravind/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/a0796856624e7326b9aa51f0c9889d0d/res/values-or/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\shyam\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-16.1.0.aar\\79342d4801776121b0e6d9759e1b5b58\\res\\values-or\\values.xml",
+                    "source": "/home/aravind/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.1.0.aar/a3c260d8679b7c3998dcb1a563000dd9/res/values-or/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.Color;
+import android.icu.util.LocaleData;
 import android.net.ConnectivityManager;
 import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
@@ -60,6 +61,7 @@ public class Question_Answer extends AppCompatActivity
     private CountDownTimer timer;
     private ProgressDialog mProgressDialog;
     private Map<String, Integer> quiz;
+    private Toast mToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -83,6 +85,7 @@ public class Question_Answer extends AppCompatActivity
         qRef = db.getReference("Questions" + round);
         aRef = db.getReference("Submissions");
         uRef = db.getReference("UserAttempt");
+
         data = new HashMap<>();
         response = new HashMap<>();
         responseOptions = new HashMap<>();
@@ -127,6 +130,15 @@ public class Question_Answer extends AppCompatActivity
             AlertDialog alert=builder.create();
             alert.show();
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        if(mToast != null)
+            mToast.cancel();
+        mToast = Toast.makeText(this, "You cannot go back at this stage!", Toast.LENGTH_SHORT);
+        mToast.show();
     }
 
     public void enableDisableMobileData() {
@@ -181,7 +193,10 @@ public class Question_Answer extends AppCompatActivity
             }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(Question_Answer.this, "Error retrieving data!", Toast.LENGTH_SHORT).show();
+                if(mToast != null)
+                    mToast.cancel();
+                mToast = Toast.makeText(Question_Answer.this, "Error retrieving data!", Toast.LENGTH_SHORT);
+                mToast.show();
             }
         });
     }
@@ -202,6 +217,8 @@ public class Question_Answer extends AppCompatActivity
             qIndexes.remove(randomIndex);
             rIndexes.add(qIndex + 1);
         }
+
+
         renderQuestion();
     }
 
@@ -214,6 +231,7 @@ public class Question_Answer extends AppCompatActivity
             Intent intent = new Intent(Question_Answer.this,Scores.class);
             intent.putExtra("uname", uname);
             String responses = getResponses();
+            Log.d("Bug", "Q&A: " + responses);
             intent.putExtra("responses", responses);
             intent.putExtra("round", round);
             //intent.putExtra("responses", responses);
@@ -243,12 +261,12 @@ public class Question_Answer extends AppCompatActivity
         timer = new CountDownTimer(15000, 10) {
             @Override
             public void onTick(long l) {
-                time.setText(String.valueOf((float) l / 1000));
+                time.setText(String.valueOf(Math.round((float) l / 1000)));
             }
 
             @Override
             public void onFinish() {
-                time.setText("0.00");
+                time.setText("0");
                 //Toast.makeText(Question_Answer.this, "Done!", Toast.LENGTH_SHORT).show();
                 if(submitted) {
                     Log.d("Quiz", response.toString());
@@ -266,7 +284,7 @@ public class Question_Answer extends AppCompatActivity
 
     public void submit(){
         submitted = true;
-        String question = "Question" + String.valueOf(rIndexes.get(questionIndex)+1);
+        String question = "Question" + String.valueOf(rIndexes.get(questionIndex));
         String answer;
         String t = time.getText().toString();
         radioGroup = (RadioGroup)findViewById(R.id.OptionsGroup);
@@ -281,7 +299,10 @@ public class Question_Answer extends AppCompatActivity
             case R.id.D: answer="D";break;
             default: answer="Nil";
         }
-        Toast.makeText(this, answer , Toast.LENGTH_SHORT).show();
+        if(mToast != null)
+            mToast.cancel();
+        mToast = Toast.makeText(this, answer , Toast.LENGTH_SHORT);
+        mToast.show();
         Log.d("Quiz", "Answer: " + answer);
         String time;
         if(answer.equals(data.get(question).get("answer")))
@@ -342,6 +363,17 @@ public class Question_Answer extends AppCompatActivity
 
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        if (questionIndex < 10){
+            if(mToast != null)
+                mToast.cancel();
+            mToast = Toast.makeText(this, "Warning!!!", Toast.LENGTH_SHORT);
+            mToast.show();
+        }
+    }
+
     public String getResponses(){
         StringBuilder t = new StringBuilder();
         Iterator it = responseOptions.entrySet().iterator();
@@ -377,5 +409,11 @@ public class Question_Answer extends AppCompatActivity
 
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if(mToast != null)
+            mToast.cancel();
+    }
 }
 
